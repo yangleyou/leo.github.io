@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//  import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '../components/HelloWorld'
 import Profile from '../components/Profile.vue'
+import Scratch from '../components/Scratch.vue'
 
 Vue.use(Router)
 
@@ -10,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      redirect:'/greeting'
+      redirect: '/greeting'
     },
     {
       path: '/greeting',
@@ -22,6 +23,11 @@ export default new Router({
       name: 'Profile',
       component: Profile
     },
+    {
+      path: '/scratch',
+      name: 'Scratch',
+      component: Scratch
+    }
 
   ]
 })
